@@ -6,7 +6,7 @@
 
 - link:
     ~/.config/nvim: nvim 
-      ~/.zshrc: zshrc
+    ~/.zshrc: zshrc
 
 
 - shell:
