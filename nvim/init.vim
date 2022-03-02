@@ -57,7 +57,7 @@ call plug#end()
 " Colorscheme
 "--------------------------------------------------------------------------
 
-colorscheme onedark
+colorscheme onedark 
 
 "--------------------------------------------------------------------------
 " VsCode neovim settings 
