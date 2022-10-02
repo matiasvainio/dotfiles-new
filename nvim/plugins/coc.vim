@@ -1,13 +1,13 @@
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'antoinemadec/coc-fzf'
 
-let g:coc_lobal_extensions = [
+let g:coc_global_extensions = [
     \ 'coc-tsserver',
     \ 'coc-json',
     \ 'coc-html',
     \ 'coc-css',
     \ 'coc-phpls',
-    \ 'coc-python',
+    \ 'coc-pyright',
 	\ 'coc-diagnostic',
     \ 'coc-prettier',
     \ 'coc-eslint']
