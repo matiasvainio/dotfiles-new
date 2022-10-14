@@ -15,6 +15,7 @@ set smartcase
 set mouse=a
 set scrolloff=8
 set sidescrolloff=8
+set clipboard=unnamedplus
 
 "--------------------------------------------------------------------------
 " Key maps 

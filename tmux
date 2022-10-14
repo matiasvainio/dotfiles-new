@@ -141,3 +141,8 @@ bind y run -b "tmux show-buffer | xclip -selection clipboard"\; display-message 
 
 bind-key -r F new-window t
 bind-key -r D run-shell "t ~/.dotfiles"
+
+# Copy pasting
+bind C-c run "tmux save-buffer - | xclip -i -sel clipboardxt"
+
+bind C-v run "tmux set-buffer "$(xclip -o -sel clipboard)"; tmux paste-buffer"
