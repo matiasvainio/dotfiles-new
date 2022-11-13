@@ -145,4 +145,4 @@ bind-key -r D run-shell "t ~/.dotfiles"
 # Copy pasting
 bind C-c run "tmux save-buffer - | xclip -i -sel clipboardxt"
 
-bind C-v run "tmux set-buffer "$(xclip -o -sel clipboard)"; tmux paste-buffer"
+#bind C-v run "tmux set-buffer "$(xclip -o -sel clipboard)"; tmux paste-buffer"
