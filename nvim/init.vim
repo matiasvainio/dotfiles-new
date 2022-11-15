@@ -65,6 +65,7 @@ source ~/.config/nvim/plugins/base16.vim
 source ~/.config/nvim/plugins/plenary.vim
 source ~/.config/nvim/plugins/nvim-telescope.vim
 source ~/.config/nvim/plugins/nvim-treesitter.vim
+source ~/.config/nvim/plugins/markdown-preview.vim
 call plug#end()
 
 "--------------------------------------------------------------------------
