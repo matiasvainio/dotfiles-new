@@ -2,18 +2,17 @@
     link:
       relink: true
 
-- clean: ['~']
+- clean: ["~"]
 
 - link:
-    ~/.config/nvim: 
-      path: nvim 
+    ~/.config/nvim:
+      path: nvim
     ~/.config/terminator:
       path: terminator
-    ~/.zshrc: 
-      path: zshrc
+    ~/.zshrc:
+      path: .zshrc
     ~/.tmux.conf:
       path: tmux
 
 - shell:
-  - [git submodule update --init --recursive, Installing submodules]
-
+    - [git submodule update --init --recursive, Installing submodules]
