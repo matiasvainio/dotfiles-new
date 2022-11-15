@@ -113,6 +113,11 @@ bind -n C-j if-shell "$is_vim" "send-keys C-j" "select-pane -D"
 bind -n C-k if-shell "$is_vim" "send-keys C-k" "select-pane -U"
 bind -n C-l if-shell "$is_vim" "send-keys C-l" "select-pane -R"
 
+bind -r y resize-pane -L
+bind -r u resize-pane -D
+bind -r i resize-pane -U
+bind -r o resize-pane -R
+
 # Switch between previous and next windows with repeatable
 bind -r n next-window
 bind -r p previous-window
@@ -137,7 +142,7 @@ bind c new-window -c "#{pane_current_path}"
 if-shell -b '[ "$(echo "$TMUX_VERSION >= 2.4" | bc)" = 1 ]' \
     'bind-key -T copy-mode-vi v send-keys -X begin-selection;'
 
-bind y run -b "tmux show-buffer | xclip -selection clipboard"\; display-message "Copied tmux buffer to system clipboard"
+# bind y run -b "tmux show-buffer | xclip -selection clipboard"\; display-message "Copied tmux buffer to system clipboard"
 
 bind-key -r F new-window t
 bind-key -r D run-shell "t ~/.dotfiles"
