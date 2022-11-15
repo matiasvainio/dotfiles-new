@@ -30,7 +30,7 @@ set -g renumber-windows on
 
 # Set a terminal that apps will know how to handle
 #set -g default-terminal "screen-256color"
-set -g default-terminal "tmux-256color"
+set -g default-terminal "xterm-256color"
 
 set -as terminal-overrides ',*:Smulx=\E[4::%p1%dm'
 
