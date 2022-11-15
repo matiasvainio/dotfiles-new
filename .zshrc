@@ -4,7 +4,6 @@
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="robbyrussell"
 
 HISTFILE=~/.zsh_history
 
@@ -24,7 +23,7 @@ HISTFILE=~/.zsh_history
 # Uncomment one of the following lines to change the auto-update behavior
 # zstyle ':omz:update' mode disabled  # disable automatic updates
 # zstyle ':omz:update' mode auto      # update automatically without asking
-# zstyle ':omz:update' mode reminder  # just remind me to update when it's time
+zstyle ':omz:update' mode reminder  # just remind me to update when it's time
 
 # Uncomment the following line to change how often to auto-update (in days).
 # zstyle ':omz:update' frequency 13
@@ -71,6 +70,9 @@ HISTFILE=~/.zsh_history
 plugins=(git)
 
 # User configuration
+ZSH_THEME="robbyrussell"
+export ZSH=/Users/matiasvainio/.oh-my-zsh
+source $ZSH/oh-my-zsh.sh
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
