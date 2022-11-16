@@ -1,4 +1,5 @@
 {
-    "python.formatting.autopep8Path": "/Users/matiasvainio/Library/Python/3.9/bin/autopep8",
-    "coc.preferences.formatOnSave": true
+  "python.formatting.autopep8Path": "/Users/matiasvainio/Library/Python/3.9/bin/autopep8",
+  "coc.preferences.formatOnSave": true,
+  "prettier.tabWidth": 2
 }
