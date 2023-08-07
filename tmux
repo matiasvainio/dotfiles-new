@@ -85,7 +85,7 @@ set -g detach-on-destroy off
 # -n means that the bind doesn't use the prefix
 
 # Ensure prefix is Ctrl+B
-set -g prefix C-Space
+set -g prefix C-B
 
 # Send prefix to a nested tmux session by doubling the prefix
 bind C-Space send-prefix

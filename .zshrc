@@ -99,10 +99,12 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias vim=nvim
 
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+# export NVM_DIR="$HOME/.nvm"
+# [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+# [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+# 
+# if command -v tmux &> /dev/null && [ -z "$TMUX" ]; then
+#     tmux attach -t default || tmux new -s default
+# fi
 
-if command -v tmux &> /dev/null && [ -z "$TMUX" ]; then
-    tmux attach -t default || tmux new -s default
-fi
+source /Users/matiasvainio/.docker/init-zsh.sh || true # Added by Docker Desktop
