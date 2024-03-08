@@ -29,10 +29,14 @@ set -g allow-rename on
 set -g renumber-windows on
 
 # Set a terminal that apps will know how to handle
-#set -g default-terminal "screen-256color"
-set -g default-terminal "xterm-256color"
+# set -g default-terminal "screen-256color"
 
-set -as terminal-overrides ',*:Smulx=\E[4::%p1%dm'
+# set -as terminal-overrides ',*:Smulx=\E[4::%p1%dm'
+
+set -g default-terminal "$TERM"
+
+set -ag terminal-overrides ",$TERM:Tc"
+
 
 # Enable the mouse for scrolling
 set -gq mode-mouse on # Tmux < 2.1
@@ -85,10 +89,11 @@ set -g detach-on-destroy off
 # -n means that the bind doesn't use the prefix
 
 # Ensure prefix is Ctrl+B
-set -g prefix C-B
+unbind-key C-b
+set-option -g prefix C-Space
 
 # Send prefix to a nested tmux session by doubling the prefix
-bind C-Space send-prefix
+bind-key C-Space send-prefix
 
 # 'PREFIX r' to reload of the config file
 unbind r
