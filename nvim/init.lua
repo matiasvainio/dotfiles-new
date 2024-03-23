@@ -254,6 +254,7 @@ require('lazy').setup({
       }
     end,
   },
+  'github/copilot.vim',
 
   { 'JoosepAlviste/nvim-ts-context-commentstring' },
 
