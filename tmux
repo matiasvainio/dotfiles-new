@@ -34,7 +34,6 @@ set -g renumber-windows on
 # set -as terminal-overrides ',*:Smulx=\E[4::%p1%dm'
 
 set -g default-terminal "$TERM"
-
 set -ag terminal-overrides ",$TERM:Tc"
 
 
