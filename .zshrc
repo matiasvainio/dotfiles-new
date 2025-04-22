@@ -73,6 +73,7 @@ plugins=(git autojump)
 ZSH_THEME="robbyrussell"
 export ZSH=/Users/matiasvainio/.oh-my-zsh
 source $ZSH/oh-my-zsh.sh
+source <(fzf --zsh)
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
